@@ -10,12 +10,14 @@ if (user) {
 import { useEffect, useState } from "react";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import { useRouter } from "next/navigation";
-
+// Ensure you have Firebase initialized in your project
 type Transaction = {
   date: string;
   description: string;
   amount: number;
 };
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { getAuth } from "firebase/auth";
 
 export default function ProfilePage() {
   const [userName, setUserName] = useState("Loading Name...");

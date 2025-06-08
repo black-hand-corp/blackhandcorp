@@ -121,7 +121,7 @@ export default function Home() {
             borderRadius: "50%",
             border: "2px solid #FFD700",
             boxShadow: "0 0 12px rgba(255, 215, 0, 0.6)",
-            marginRight: -10,
+            marginRight: -100,
             cursor: "pointer",
           }}
         />
@@ -187,11 +187,11 @@ export default function Home() {
           </li>
           <li style={{ margin: "20px 0" }}>
             <a
-              href="/contact"
+              href="/packages"
               style={{ color: "#FFD700", textDecoration: "none", fontSize: "1.2rem" }}
               onClick={() => setPanelOpen(false)}
             >
-              Contact
+              packages
             </a>
           </li>
         </ul>

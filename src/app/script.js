@@ -9,3 +9,10 @@ registerLink.onclick = () => {
 loginLink.onclick = () => {
     wrapper.classList.remove('active')
 }   
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    document.querySelectorAll('h1').forEach(el => {
+      el.classList.add('floating');
+    });
+  }, 500); // Delay for smooth entry
+});
